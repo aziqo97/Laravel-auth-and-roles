@@ -15,7 +15,7 @@ class CreateApplicationsTable extends Migration
     {
         Schema::create('applications', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained()->onDelete('casced');
+            $table->foreignId('user_id')->constrained();
             $table->text('subject');
             $table->text('message');
             $table->text('file_url');
