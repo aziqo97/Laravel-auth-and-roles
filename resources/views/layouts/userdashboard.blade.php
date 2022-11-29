@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
                     @if(auth()->user()->role->name == 'manager')
-                    Recived Applications
+                        Recived Applications
                         <div class="mt-8">  <div class="rounded-xl border p-5 shadow-md w-9/12 bg-white">
                                 <div class="flex w-full items-center justify-between border-b pb-3">
                                     <div class="flex items-center space-x-3">
@@ -59,7 +59,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            @else
+                                @else
                                     <div>
                                         <div class='w-full max-w-lg px-10 py-8 mx-auto bg-white rounded-lg shadow-xl'>
                                             <div class='max-w-md mx-auto space-y-6'>
@@ -79,11 +79,11 @@
                                             </div>
                                         </div>
                                     </div>
-                    @endif
+                                @endif
+                            </div>
+                        </div>
                 </div>
             </div>
-        </div>
-    </div>
 
 
 

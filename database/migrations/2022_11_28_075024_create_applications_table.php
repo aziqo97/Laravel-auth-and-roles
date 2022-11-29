@@ -18,7 +18,7 @@ class CreateApplicationsTable extends Migration
             $table->foreignId('user_id')->constrained();
             $table->text('subject');
             $table->text('message');
-            $table->text('file_url');
+            $table->text('file_url')->nullable();
             $table->timestamps();
         });
     }
